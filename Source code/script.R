@@ -65,7 +65,7 @@ lat <- modelerData$%%identif_lat%%
   long<-modelerData$%%identif_lng%%
   
   root <- "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/reverseGeocode"
-url <- paste(root,  "?location=",long,'%2C+',lat,'&distance=', %%dist%%,'&outSR=', "&token=", token, "&f=json", sep = "")
+url <- paste(root,  "?location=",long,'%2C+',lat,'&distance=', %%dist%%,'&outSR=', "&token=", token, "&f=json","&forStorage=true", sep = "")
 
 print(url)
 
